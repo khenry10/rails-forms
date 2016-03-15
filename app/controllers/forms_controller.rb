@@ -5,6 +5,6 @@ class FormsController < ApplicationController
   end
 
   def index
-    @languages = Language.all
+    @cats = Cat.all
   end
 end

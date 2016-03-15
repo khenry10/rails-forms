@@ -2,6 +2,7 @@
 
 <br>
 
-<% @languages.each do |language| %>
-  <%= link_to language.name, language.url %>
+<% @cats.each do |cat| %>
+  <h2><%= cat.kind %></h2>
+  <%= image_tag cat.image_url %>
 <% end %>

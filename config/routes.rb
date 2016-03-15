@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get "/forms/checkbox", to: "forms#checkbox"
   get "/forms/radio", to: "forms#radio"
   get "/forms/date", to: "forms#date"
+  resources :cats
 end
