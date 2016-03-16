@@ -1,12 +1,11 @@
 <h2>Radio</h2>
 
-<form class="js-submit" action="/forms" method="post">
-  <!-- your code here -->
-  <button type="submit">Submit</button>
-</form>
+<body>
+<%= form_tag do %>
+Male <%=radio_button_tag("cat", "Male") %>
+Female <%=radio_button_tag("cat", "Female") %>
+<% end %>
+</body>
 
-<script type="text/javascript">
-  $(".js-submit").on("submit", function(event){
-    event.preventDefault();
-  });
-</script>
+
+Other <%=radio_button_tag("cat", "Other") %>

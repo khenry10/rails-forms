@@ -1,7 +1,7 @@
 class FormsController < ApplicationController
 
   def post
-    # handle post requests here
+    @cats = Cat.find[:params][:id]
   end
 
   def index
